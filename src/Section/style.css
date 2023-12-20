@@ -1,0 +1,28 @@
+.section__beforeList {
+    background-color: white;
+    border: none;
+    margin: 2px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.section__beforeList--margin {
+    margin: 10px 2px 0px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+    .section__beforeList--margin {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .section__beforeList--margin {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
