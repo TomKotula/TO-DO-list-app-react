@@ -8,7 +8,7 @@ This app allows organize your tasks to do in your daily routine. You can add, re
 
 ## Demo
 
-https://tomkotula.github.io/TO-DO-list-app/
+[https://tomkotula.github.io/todos-list-react/](https://tomkotula.github.io/todos-list-react/)
 
 ## Color Reference
 
