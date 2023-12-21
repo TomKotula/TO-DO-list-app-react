@@ -6,6 +6,7 @@ const Tasks = (props) => (
     <ul className="flex__list js-tasks">
         {props.tasks.map(task => (
             <li
+                key={task.id}
                 className="flex__listItem"
             >
                 <button className="js-done">
