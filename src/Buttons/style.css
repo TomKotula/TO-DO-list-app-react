@@ -2,6 +2,7 @@
     border: none;
     background-color: white;
     color: teal;
+    font-size: 15px;
 }
 
 .js-toggleButtonEvents:hover {

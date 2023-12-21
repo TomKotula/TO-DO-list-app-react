@@ -6,6 +6,10 @@
     font-weight: bold;
 }
 
+.form__label {
+    font-size: 20px;
+}
+
 .form__input {
     width: 85%;
     padding: 10px;
@@ -43,6 +47,7 @@
     width: 100px;
     margin-left: 20px;
     transition: 0.5s;
+    font-size: 15px;
 }
 
 .form__button:hover {

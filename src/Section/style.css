@@ -26,3 +26,7 @@
         align-items: flex-start;
     }
 }
+
+.section__label  {
+    font-size: 20px;
+}
