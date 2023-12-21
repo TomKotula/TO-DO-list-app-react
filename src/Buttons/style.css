@@ -16,7 +16,6 @@
 @media (max-width: 550px) {
     .js-toggleButtonEvents {
         padding: 8px;
-        margin-top: 8px;
         margin: 0 auto;
         display: block;
     }
@@ -25,7 +24,6 @@
 @media (max-width: 767px) {
     .js-toggleButtonEvents {
         padding: 8px;
-        margin-top: 8px;
         margin: 0 auto;
         display: block;
     }
