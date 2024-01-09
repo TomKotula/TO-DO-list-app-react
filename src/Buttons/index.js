@@ -4,7 +4,7 @@ const Buttons = (props) => (
     props.tasks.length > 0 && (
         <div className="js-toggleButtonEvents">
             <button className="js-toggleButtonEvents js-hideCompletedTasksButton">
-                {props.hideDoneTasks ? 'Show' : 'Hide'} completed tasks
+                {props.hideDone ? 'Show' : 'Hide'} completed tasks
             </button>
             <button
                 className="js-toggleButtonEvents js-markAllTasksAsDone"
