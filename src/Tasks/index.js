@@ -2,7 +2,7 @@ import "./style.css";
 import checkmark from './checkmark.png';
 import bin from './bin.png';
 
-const Tasks = ({ tasks, hideDone }) => (
+const Tasks = ({ tasks, hideDone, removeTask }) => (
     <ul className="flex__list js-tasks">
         {tasks.map(task => (
             (hideDone && task.done) ? null : (
@@ -16,7 +16,7 @@ const Tasks = ({ tasks, hideDone }) => (
                     <div className={`js-content ${task.done ? 'js-contentLineThrough' : ''}`}>
                         {task.content}
                     </div>
-                    <img className="js-remove" src={bin} alt="bin" />
+                    <img className="js-remove" src={bin} alt="bin" onClick={() => removeTask(task.id)}/>
                 </li>
             )
         ))}
