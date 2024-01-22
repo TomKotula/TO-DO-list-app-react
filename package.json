@@ -1,8 +1,8 @@
 {
-  "name": "todo-list-react",
+  "name": "TO-DO-list-app-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tomkotula.github.io/todos-list-react/",
+  "homepage": "https://tomkotula.github.io/TO-DO-list-app-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
