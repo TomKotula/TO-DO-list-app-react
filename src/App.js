@@ -11,8 +11,8 @@ import { useState } from "react";
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
-    { id: 1, content: "przejsc na reacta", done: false },
-    { id: 2, content: "zjesc kolacje", done: true },
+    { id: 1, content: "rake leaves", done: false },
+    { id: 2, content: "buy a gift for GF", done: true },
   ]);
 
   const toggleHideDone = () => {
@@ -38,6 +38,11 @@ function App() {
   };
 
   const addNewTask = (content) => {
+
+    if (content.trim() === "") {
+      return;
+    }
+    
     setTasks(tasks => [
       ...tasks,
       {
