@@ -16,7 +16,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     <div className={`js-content ${task.done ? 'js-contentLineThrough' : ''}`}>
                         {task.content}
                     </div>
-                    <img className="js-remove" src={bin} alt="bin" onClick={() => removeTask(task.id)}/>
+                    <img className="js-remove" src={bin} alt="bin" onClick={() => removeTask(task.id)} />
                 </li>
             )
         ))}
