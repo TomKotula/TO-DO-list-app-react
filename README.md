@@ -1,6 +1,6 @@
-# TO-DO-list-app
+# TO-DO-list-app-react
 
-This app allows organize your tasks to do in your daily routine. You can add, remove and mark a task as "done".
+This app allows organize your tasks to do in your daily routine. You can add, remove, mark a task as "done" and more!
 
 ## Screenshots
 
@@ -8,15 +8,15 @@ This app allows organize your tasks to do in your daily routine. You can add, re
 
 ## Demo
 
-[https://tomkotula.github.io/todos-list-react/](https://tomkotula.github.io/todos-list-react/)
+[https://tomkotula.github.io/TO-DO-list-app-react/](https://tomkotula.github.io/TO-DO-list-app-react/)
 
 ## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Body Color | #e2e0e0
-| Placeholder Color | #bebdbd
-| form__button Color | rgb(39, 124, 124)
+| Placeholder Color | #969696
+| form__button backgroundcolor | rgb(39, 124, 124)
 
 
 ## Authors
