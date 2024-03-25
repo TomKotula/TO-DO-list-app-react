@@ -12,42 +12,42 @@ function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || []
-);
+  );
 
-useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks))
-}, [tasks]
-);
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
+    setHideDone((hideDone) => !hideDone);
   };
 
   const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
+    setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
+    setTasks((tasks) =>
+      tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, done: !task.done };
+        }
 
-      return task;
-    }));
+        return task;
+      })
+    );
   };
 
   const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({ ...task, done: true, })));
+    setTasks((tasks) => tasks.map((task) => ({ ...task, done: true })));
   };
 
   const addNewTask = (content) => {
-
     if (content.trim() === "") {
       return;
     }
-    
-    setTasks(tasks => [
+
+    setTasks((tasks) => [
       ...tasks,
       {
         content,
