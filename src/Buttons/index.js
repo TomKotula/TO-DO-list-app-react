@@ -1,20 +1,20 @@
-import "./style.css";
+import { ToggleButtonEvents, TextButtons } from "./styled";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-    tasks.length > 0 && (
-        <div className="js-toggleButtonEvents">
-            <button onClick={toggleHideDone} className="js-toggleButtonEvents js-hideCompletedTasksButton">
-                {hideDone ? 'Show' : 'Hide'} completed tasks
-            </button>
-            <button
-                className="js-toggleButtonEvents js-markAllTasksAsDone"
-                disabled={tasks.every(({ done }) => done)}
-                onClick={() => setAllDone()}
-            >
-                Complete all tasks
-            </button>
-        </div>
-    )
-);
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
+  tasks.length > 0 && (
+    <ToggleButtonEvents>
+      <TextButtons
+        onClick={toggleHideDone}
+      >
+        {hideDone ? "Show" : "Hide"} completed tasks
+      </TextButtons>
+      <TextButtons
+        disabled={tasks.every(({ done }) => done)}
+        onClick={() => setAllDone()}
+      >
+        Complete all tasks
+      </TextButtons>
+    </ToggleButtonEvents>
+  );
 
 export default Buttons;

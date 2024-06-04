@@ -47,25 +47,10 @@ export const Content = styled.div`
   padding-left: 10px;
   font-size: 15px;
 
-  @media (max-width: 550px) {
-    word-wrap: break-word;
-    overflow: hidden;
-    width: 195px;
-  }
-
-  @media (max-width: 767px) {
-    word-wrap: break-word;
-    overflow: hidden;
-    width: 195px;
-  }
-
-  @media (max-width: 992px) {
-    word-wrap: break-word;
-    overflow: hidden;
-    width: 195px;
-  }
-
-  @media (max-width: 1280px) {
+  @media (max-width: 550px),
+    (max-width: 767px),
+    (max-width: 992px),
+    (max-width: 1280px) {
     word-wrap: break-word;
     overflow: hidden;
     width: 195px;
@@ -77,6 +62,6 @@ export const Content = styled.div`
 `;
 
 export const RemoveButton = styled.img`
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 `;

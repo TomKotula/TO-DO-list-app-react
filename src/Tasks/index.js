@@ -12,10 +12,10 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     <DoneButton $done={task.done} onClick={() => toggleTaskDone(task.id)} >
                         {task.done ? <img src={checkmark} className="js-checkmarkIcon" alt="checkmark" /> : null}
                     </DoneButton>
-                    <Content className={`js-content ${task.done ? 'js-contentLineThrough' : ''}`}>
+                    <Content className={`${task.done ? 'js-contentLineThrough' : ''}`}>
                         {task.content}
                     </Content>
-                    <RemoveButton className="js-remove" src={bin} alt="bin" onClick={() => removeTask(task.id)} />
+                    <RemoveButton src={bin} alt="bin" onClick={() => removeTask(task.id)} />
                 </ListItem>
             )
         ))}
