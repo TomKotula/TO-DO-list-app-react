@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { FormFieldset, FormLabel, FormInput, AddButton } from "./styled";
+import useFocus from "./useFocus";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const [inputRef, setInputFocus] = useFocus();
 
     const onFormSubmit = (event) => {
         event.preventDefault();
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
+        setInputFocus();
     };
 
     return (
@@ -17,6 +20,7 @@ const Form = ({ addNewTask }) => {
         </FormFieldset>
         <FormFieldset>
           <FormInput
+            ref={inputRef}
             value={newTaskContent}
             type="text"
             placeholder="What is there to do?"
