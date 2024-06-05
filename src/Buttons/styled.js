@@ -15,15 +15,17 @@ export const ToggleButtonEvents = styled.div`
   }
 
   @media (max-width: 550px) {
-      padding: 8px;
-      margin: 0 auto;
-      display: block;
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 767px) {
-      padding: 8px;
-      margin: 0 auto;
-      display: block;
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
