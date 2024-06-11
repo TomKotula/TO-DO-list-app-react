@@ -3,8 +3,8 @@ import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import Main from "../../Main";
-import SectionList from "../../SectionList";
+import Main from "../../common/Main";
+import SectionList from "../../common/SectionList";
 import Container from "../../common/Container";
 
 function Tasks() {
