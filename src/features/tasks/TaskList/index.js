@@ -2,10 +2,10 @@ import checkmark from "./checkmark.png";
 import bin from "./bin.png";
 import { useSelector, useDispatch } from "react-redux";
 import { List, ListItem, DoneButton, Content, RemoveButton } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
+import { selectTasksState, toggleTaskDone, removeTask } from "../tasksSlice";
 
 const TaskList = () => {
-  const {tasks, hideDone} = useSelector(selectTasks);
+  const { tasks, hideDone } = useSelector(selectTasksState);
   const dispatch = useDispatch();
    
   return (

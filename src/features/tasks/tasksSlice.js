@@ -42,5 +42,5 @@ export const {
   fetchExampleTasks,
   setTasks,
 } = tasksSlice.actions;
-export const selectTasks = (state) => state.tasks;
+export const selectTasksState = (state) => state.tasks;
 export default tasksSlice.reducer;
