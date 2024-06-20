@@ -11,15 +11,15 @@ const tasksSlice = createSlice({
     addTask: ({ tasks }, { payload: task }) => {
       tasks.push(task);
     },
-    toggleHideDone: ({ hideDone }) => {
-      hideDone = !hideDone;
+    toggleHideDone: (state) => {
+      state.hideDone = !state.hideDone;
     },
-    toggleTaskDone: ({ tasks }, { payload: taskId }) => {
-      const index = tasks.findIndex((task) => task.id === taskId);
-      tasks[index].done = !tasks[index].done;
+    toggleTaskDone: (state, { payload: taskId }) => {
+      const index = state.tasks.findIndex((task) => task.id === taskId);
+      state.tasks[index].done = !state.tasks[index].done;
     },
-    removeTask: ({ tasks }, { payload: taskId }) => {
-      tasks = tasks.filter((task) => task.id !== taskId);
+    removeTask: (state, { payload: taskId }) => {
+      state.tasks = state.tasks.filter((task) => task.id !== taskId);
     },
     setAllDone: ({ tasks }) => {
       tasks.forEach((task) => {
