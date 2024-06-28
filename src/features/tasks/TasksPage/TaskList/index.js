@@ -2,7 +2,7 @@ import checkmark from "./checkmark.png";
 import bin from "./bin.png";
 import { useSelector, useDispatch } from "react-redux";
 import { List, ListItem, DoneButton, Content, RemoveButton } from "./styled";
-import { toggleTaskDone, removeTask } from "../../tasksSlice";
+import { toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
 import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const TaskList = () => {
