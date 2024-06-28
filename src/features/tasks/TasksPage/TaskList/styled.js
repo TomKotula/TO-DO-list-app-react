@@ -1,4 +1,5 @@
 import { styled, css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   background-color: white;
@@ -64,4 +65,9 @@ export const Content = styled.div`
 export const RemoveButton = styled.img`
   height: 30px;
   width: 30px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: teal;
 `;

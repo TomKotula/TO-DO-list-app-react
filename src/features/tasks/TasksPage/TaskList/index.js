@@ -1,7 +1,14 @@
 import checkmark from "./checkmark.png";
 import bin from "./bin.png";
 import { useSelector, useDispatch } from "react-redux";
-import { List, ListItem, DoneButton, Content, RemoveButton } from "./styled";
+import {
+  List,
+  ListItem,
+  DoneButton,
+  Content,
+  RemoveButton,
+  StyledLink,
+} from "./styled";
 import { toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
 import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -31,7 +38,7 @@ const TaskList = () => {
               ) : null}
             </DoneButton>
             <Content className={`${task.done ? "js-contentLineThrough" : ""}`}>
-              <Link to={`/tasks/${task.id}`}>{task.content}</Link>
+              <StyledLink to={`/tasks/${task.id}`}>{task.content}</StyledLink>
             </Content>
             <RemoveButton
               src={bin}
