@@ -16,7 +16,7 @@ export const SearchContent = styled.div`
   background-color: white;
   border: none;
   padding: 20px;
-  margin: 0.5px 2px 2px 2px;
+  margin: 0px 2px 2px 2px;
 `;
 
 export const Header = styled.p`

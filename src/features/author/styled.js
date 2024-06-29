@@ -32,5 +32,5 @@ export const AuthorContent = styled.div`
 
 export const AuthorLink = styled.a`
   text-decoration: none;
-  color: #1451b8;
+  color: rgb(39, 124, 124);
 `;
