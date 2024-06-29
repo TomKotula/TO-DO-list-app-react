@@ -2,9 +2,8 @@ import {
   selectTasksState,
   toggleHideDone,
   setAllDone,
-  fetchExampleTasks,
 } from "../../tasksSlice";
-import { ToggleButtonEvents, TextButtons } from "./styled";
+import { ToggleButtonEvents, TextButtons } from "../styledButtons";
 import { useSelector, useDispatch } from "react-redux";
 
 const Buttons = () => {
@@ -14,13 +13,6 @@ const Buttons = () => {
   return (
     <div>
       <ToggleButtonEvents>
-        <TextButtons
-          onClick={() => {
-            dispatch(fetchExampleTasks());
-          }}
-        >
-          Download example tasks
-        </TextButtons>
         {tasks.length > 0 && (
           <>
             <TextButtons onClick={() => dispatch(toggleHideDone())}>

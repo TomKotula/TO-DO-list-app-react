@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 
 export const FormFieldset = styled.fieldset`
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   border: none;
   margin: 2px;
