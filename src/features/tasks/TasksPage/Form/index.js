@@ -43,6 +43,8 @@ const Form = () => {
       } catch (error) {
         console.error("Failed to fetch example tasks", error);
         alert("Failed to download example tasks");
+      } finally {
+        setIsLoading(false);
       }
     }, 500);
   };
