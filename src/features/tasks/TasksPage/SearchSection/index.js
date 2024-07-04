@@ -1,4 +1,4 @@
-import Search from "./Search";
+import SearchComponent from "./Search";
 import { Wrapper, SearchContent, Header } from "./styled";
 
 const SearchSection = () => {
@@ -8,7 +8,7 @@ const SearchSection = () => {
         <Header>Search</Header>
       </SearchContent>
       <SearchContent>
-        <Search />
+        <SearchComponent />
       </SearchContent>
     </Wrapper>
   );

@@ -4,7 +4,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { AppList, AppListItem, StyledNavLink } from "./styled";
 
-export default () => (
+const App = () => (
   <HashRouter>
     <nav>
       <AppList>
@@ -32,3 +32,5 @@ export default () => (
     </nav>
   </HashRouter>
 );
+
+export default App;

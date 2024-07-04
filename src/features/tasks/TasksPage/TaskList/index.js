@@ -10,7 +10,7 @@ import {
   StyledLink,
 } from "./styled";
 import { toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
-import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const TaskList = () => {
   const location = useLocation();

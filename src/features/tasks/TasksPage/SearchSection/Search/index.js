@@ -1,7 +1,7 @@
 import Input from "../../../Input";
 import { useQueryParameter, useReplaceQueryParameter } from "./queryParameters";
 
-export default () => {
+const SearchComponent = () => {
   const query = useQueryParameter("search");
   const replaceQueryParameter = useReplaceQueryParameter();
 
@@ -20,3 +20,5 @@ export default () => {
     />
   );
 };
+
+export default SearchComponent;

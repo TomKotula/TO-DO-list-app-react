@@ -1,7 +1,7 @@
 import Header from "../../common/Header";
 import { Wrapper, AuthorSection, AuthorContent, AuthorName, AuthorLink } from "./styled";
 
-export default () => {
+const AurthorComponent = () => {
   return (
     <Wrapper>
       <Header title="About author" />
@@ -30,3 +30,5 @@ export default () => {
     </Wrapper>
   );
 };
+
+export default AurthorComponent;
